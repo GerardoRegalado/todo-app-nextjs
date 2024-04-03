@@ -1,9 +1,11 @@
 "use client" // --> Importart: this means that this is a client component and not a server component
 
 import React, { useState } from 'react'
+import { observer } from 'mobx-react-lite';
 import TodoStore from '@/app/store/store';
 
-export default function TodoApp() {
+
+const TodoApp = () => {
     const [newTodo, setNewTodo] = useState('');
 
     const handleAddTodo = () => {
@@ -39,8 +41,12 @@ export default function TodoApp() {
   )
 }
 
+export default observer(TodoApp);
+
 
 /**
  * ! Topics for studying:
- * ?    "use client": how it is working in a deeper way and how works the server component
+ * ?    "use client": how it is working in a deeper way
+ * ?    "use server":  how works the use server?
+ * ?     observer, how it is working and why we need to wrap the arrow function const with it?
  */

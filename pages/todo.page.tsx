@@ -15,9 +15,27 @@ export default function TodoApp() {
   
     const handleRemoveTodo = (index: number) => {
       TodoStore.removeTodo(index);
+      setNewTodo('');
     };
   return (
-    <div>todo.page</div>
+    <>
+      <h1>Todo App</h1>
+      <input
+        type="text"
+        value={newTodo}
+        onChange={(e) => setNewTodo(e.target.value)}
+        placeholder="Enter a new todo"
+      />
+      <button onClick={handleAddTodo}>Add</button>
+      <ul>
+        {TodoStore.todos.map((todo, index) => (
+          <li key={index}>
+            {index} - {todo}
+            <button onClick={() => handleRemoveTodo(index)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+    </>
   )
 }
 

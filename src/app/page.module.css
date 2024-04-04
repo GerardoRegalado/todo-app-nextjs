@@ -1,13 +1,27 @@
 .main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
+  background-color:#212529; 
 }
 
 .done {
   text-decoration: line-through;
 }
 
+.footer {
+  height: 5vh;
+  background-color: #212529;
+  border-top: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerText {
+  color: gray;
+  margin: 1vw;
+  font-size: smaller;
+}

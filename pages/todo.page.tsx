@@ -1,39 +1,46 @@
-"use client" // --> Importart: this means that this is a client component and not a server component
+"use client" // --> Importart: this means that this is a client component and not a server component.
 
+// --> Package Imports
 import React, { useState } from 'react'
 import { observer } from 'mobx-react-lite';
+
+// --> Local Imports
 import TodoStore from '@/app/store/store';
+import TaskCard from '@/app/components/TaskCard';
 
 
 const TodoApp = () => {
-    const [newTodo, setNewTodo] = useState('');
 
-    const handleAddTodo = () => {
-      if (newTodo.trim()) {
-        TodoStore.addTodo(newTodo);
-        setNewTodo('');
+    const [newTask, setNewTask] = useState(''); // --> Create a new state for todo task.
+
+
+  /**
+   * * it adds a new todo item to the TodoStore if the input is not empty
+   */
+    const handleAddTask = (): void => {
+      if (newTask.trim()) {
+        TodoStore.addTask(newTask);
+        setNewTask('');
       }
     };
-  
-    const handleRemoveTodo = (index: number) => {
-      TodoStore.removeTodo(index);
-      setNewTodo('');
-    };
+
   return (
     <>
       <h1>Todo App</h1>
       <input
         type="text"
-        value={newTodo}
-        onChange={(e) => setNewTodo(e.target.value)}
-        placeholder="Enter a new todo"
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
+        placeholder="Enter a new task"
       />
-      <button onClick={handleAddTodo}>Add</button>
+      <button onClick={handleAddTask}>Add</button>
       <ul>
-        {TodoStore.todos.map((todo, index) => (
+        {TodoStore.todos.map((task, index) => (
           <li key={index}>
-            {index} - {todo}
-            <button onClick={() => handleRemoveTodo(index)}>Remove</button>
+            <TaskCard 
+            task = {task}
+            index = {index}
+            />
           </li>
         ))}
       </ul>

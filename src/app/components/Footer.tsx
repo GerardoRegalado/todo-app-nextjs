@@ -1,4 +1,6 @@
+// --> Package Imports
 import React from 'react'
+// --> Local Imports
 import styles from './../page.module.css'
 
 function Footer() {

@@ -48,14 +48,12 @@ const TodoApp = () => {
         <div className={styles.taskList}>     
           <ul className={styles.ul}>
             {TodoStore.todos.length === 0 ? (<div className={styles.noTask}>No task added</div>) : TodoStore.todos.map((task, index) => (
-              <>
                 <li className={styles.li} key={index}>
                   <TaskCard 
                   task = {task}
                   index = {index}
                   />
                 </li>
-              </>
             ))}
           </ul> 
         </div>

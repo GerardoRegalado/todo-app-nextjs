@@ -12,14 +12,6 @@ This is a TO-DO applicaction made with Next.js, Mobx and Bootstrap presented for
 **Client:** Next.js, Mobx, Bootstrap, Huge Icons
 
 
-## Deployment
-
-To watch the deployed version visit the following link:
-
-[https://todo-app-nextjs-mobx.vercel.app/](https://todo-app-nextjs-mobx.vercel.app/)
-
-
-
 ## Screenshots
 
   ### Desktop view: 
@@ -30,6 +22,12 @@ To watch the deployed version visit the following link:
   
   <img src="https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/6ec7bc05-d743-46f8-a89f-f2b279c899f8" style="width: 45%;" />
 
+
+## Deployment
+
+To watch the deployed version visit the following link:
+
+[https://todo-app-nextjs-mobx.vercel.app/](https://todo-app-nextjs-mobx.vercel.app/)
 
 
 ## Run Locally

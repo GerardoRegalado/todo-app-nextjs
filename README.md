@@ -1,4 +1,7 @@
-![nextjs](https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/ece6c729-0a10-4126-8be7-eaaf0059a663)
+<p align="center">
+  <img src="https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/ece6c729-0a10-4126-8be7-eaaf0059a663" width="50%" style="margin-bottom: 10px"/>
+</p>
+
 # TO-DO APP
 
 This is a TO-DO applicaction made with Next.js, Mobx and Bootstrap presented for a technical test.
@@ -19,14 +22,14 @@ To watch the deployed version visit the following link:
 
 ## Screenshots
 
-### Desktop view: 
+  ### Desktop view: 
+  
+  <img src="https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/733f136a-67ce-46cb-b6b1-98b5222f4d85" style="width: 75%; margin-right: 10px;" />
+  
+  ### Mobile View:
+  
+  <img src="https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/6ec7bc05-d743-46f8-a89f-f2b279c899f8" style="width: 45%;" />
 
-![Desktop](https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/733f136a-67ce-46cb-b6b1-98b5222f4d85)
-
-
-### Mobile View
-
-![Mobile](https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/6ec7bc05-d743-46f8-a89f-f2b279c899f8)
 
 
 ## Run Locally
@@ -60,3 +63,6 @@ Start the server
 
 - [@GerardoRegalado](https://www.github.com/GerardoRegalado)
 
+### Disclosure
+
+The dummy data that is loaded and displayed in the tasks is a dialogue from the movie The Grinch (2000). I am not depressed nor do I hate myself (yet).

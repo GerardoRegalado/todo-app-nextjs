@@ -25,13 +25,23 @@ const TaskCard = ({ task, index } : { task: Task, index: number }) => {
     
   return (
     <>
-        <input 
-          type="checkbox" 
-          checked = {task.done}
-          onChange={handleToggleDone}
-        />
-        <span className={task.done? styles.done: ''}>{task.title}</span> 
-        <button onClick={() => handleRemoveTask(index)}>Remove</button>
+    <div className={`card bg-dark border-bottom border-dark-subtle ${styles.cardContainer}`}>
+      <div className="card-body text-white d-flex align-items-center justify-content-between">
+        <div>
+          <input 
+            type="checkbox" 
+            className='form-check-input me-2'
+            checked = {task.done}
+            onChange={handleToggleDone} />
+          <span className={task.done? styles.done: ''}>{task.title}</span> 
+        </div>
+        <button
+          className={`text-danger ${styles.remove}`}
+          onClick={() => handleRemoveTask(index)}>
+            Remove
+        </button>
+      </div>
+    </div>
     </>
   )
 }

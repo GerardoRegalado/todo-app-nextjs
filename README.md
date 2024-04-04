@@ -4,6 +4,31 @@
 This is a TO-DO applicaction made with Next.js, Mobx and Bootstrap presented for a technical test.
 
 
+## Tech Stack
+
+**Client:** Next.js, Mobx, Bootstrap, Huge Icons
+
+
+## Deployment
+
+To watch the deployed version visit the following link:
+
+[https://todo-app-nextjs-mobx.vercel.app/](https://todo-app-nextjs-mobx.vercel.app/)
+
+
+
+## Screenshots
+
+### Desktop view: 
+
+![Desktop](https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/733f136a-67ce-46cb-b6b1-98b5222f4d85)
+
+
+### Mobile View
+
+![Mobile](https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/6ec7bc05-d743-46f8-a89f-f2b279c899f8)
+
+
 ## Run Locally
 
 Clone the project
@@ -29,35 +54,6 @@ Start the server
 ```bash
   npm run dev
 ```
-
-
-## Tech Stack
-
-**Client:** Next.js, Mobx, Bootstrap, Huge Icons
-
-
-
-
-## Deployment
-
-To watch the deployed version visit the following link:
-
-[https://todo-app-nextjs-mobx.vercel.app/](https://todo-app-nextjs-mobx.vercel.app/)
-
-
-
-## Screenshots
-
-### Desktop view: 
-
-![Desktop](https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/733f136a-67ce-46cb-b6b1-98b5222f4d85)
-
-
-### Mobile View
-
-![Mobile](https://github.com/GerardoRegalado/todo-app-nextjs/assets/97474369/6ec7bc05-d743-46f8-a89f-f2b279c899f8)
-
-
 
 
 ## Authors

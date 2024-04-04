@@ -15,7 +15,6 @@ const TodoApp = () => {
 
     const [newTask, setNewTask] = useState(''); // --> Create a new state for todo task.
 
-
   /**
    * * it adds a new todo item to the TodoStore if the input is not empty
    */
@@ -57,7 +56,6 @@ const TodoApp = () => {
                   />
                 </li>
               </>
-
             ))}
           </ul> 
         </div>

@@ -1,18 +1,22 @@
 "use client"
+// --> Package Imports
 import React from 'react'
-import TodoStore from '../store/store'
 import { observer } from 'mobx-react-lite';
+// --> Local Imports
+import TodoStore from '../store/store'
 
 
 const Header = () => {
 
+  /**
+   * It fetches dummy task data from a JSON file and adds each task to a TodoStore.
+   */
   const loadDummyData = async () => {
       const response = await fetch('/dummydata.json')
       const dummytasks: Task[] = await response.json();
       dummytasks.forEach( task => {
         TodoStore.addTask(task.title)
-      })
-    
+      }) 
   }
   return (
     <>
